@@ -28,6 +28,9 @@ foreach ([
         }
         if ($configKey === 'default_host') {
             $envValue = explode(',', $envValue);
+            if (empty($envValue)) {
+                $envValue = '';
+            }
         }
         $config[$configKey] = $envValue;
         continue 1;
