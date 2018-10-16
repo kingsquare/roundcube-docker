@@ -23,10 +23,14 @@ foreach ([
     }
     foreach ($envKeys as $envKey) {
         $envValue = getenv($envKey);
-        if ($envValue !== false) {
-            $config[$configKey] = $envValue;
-            continue 1;
+        if ($envValue === false) {
+            continue;
         }
+        if ($configKey === 'default_host') {
+            $envValue = explode(',', $envValue);
+        }
+        $config[$configKey] = $envValue;
+        continue 1;
     }
 }
 
