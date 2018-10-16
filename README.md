@@ -26,6 +26,8 @@ Configuration is done via environment variables
 
 Extend this Docker image and add an own`/app/config.custom.php`. See [config defaults](https://github.com/roundcube/roundcubemail/blob/master/config/defaults.inc.php)
 
+> IMPORTANT! Read all comments in defaults.inc.php, understand them and configure your installation to be not surprised by default behaviour.
+
 #### php.ini
 
 Extend this Docker image and add an own`/app/php.custom.ini`.
