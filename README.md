@@ -8,12 +8,12 @@ Configuration is done via environment variables
 
 |Key|Description|
 |---|---|
-|RCUBE_DATABASE_URL|i.e. `sqlite:////data/roundcube.db` [docs](https://github.com/roundcube/roundcubemail/wiki/Configuration#database-connection)|
-|RCUBE_DEFAULT_HOST|The default IMAP server [docs](https://github.com/roundcube/roundcubemail/wiki/Configuration#imap-server-connection) comma delimit for multiple choices, set empty for user choice|
-|RCUBE_SMTP_SERVER|The default SMTP server (defaults to `RCUBE_DEFAULT_HOST`) [docs](https://github.com/roundcube/roundcubemail/wiki/Configuration#sending-messages-via-smtp)|
-|RCUBE_IDENTITIES_LEVEL|[docs](https://github.com/roundcube/roundcubemail/wiki/Configuration#restricting-sender-identities)|
-|RCUBE_SKIN_LOGO|Override the skin logo [docs](https://github.com/roundcube/roundcubemail/wiki/Configuration#customize-the-look)|
-|RCUBE_SUPPORT_URL|The support url to display for support [docs](https://github.com/roundcube/roundcubemail/wiki/Configuration#customize-the-look)|
+|RCUBE_DATABASE_URL|i.e. `sqlite:////data/roundcube.db` [see also](https://github.com/roundcube/roundcubemail/wiki/Configuration#database-connection)|
+|RCUBE_DEFAULT_HOST|The default IMAP server also comma delimit for multiple choices, set empty for user choice [see also](https://github.com/roundcube/roundcubemail/wiki/Configuration#imap-server-connection)|
+|RCUBE_SMTP_SERVER|The default SMTP server (defaults to `RCUBE_DEFAULT_HOST`) [see also](https://github.com/roundcube/roundcubemail/wiki/Configuration#sending-messages-via-smtp)|
+|RCUBE_IDENTITIES_LEVEL|[see also](https://github.com/roundcube/roundcubemail/wiki/Configuration#restricting-sender-identities)|
+|RCUBE_SKIN_LOGO|Override the skin logo [see also](https://github.com/roundcube/roundcubemail/wiki/Configuration#customize-the-look)|
+|RCUBE_SUPPORT_URL|The support url to display for support [see also](https://github.com/roundcube/roundcubemail/wiki/Configuration#customize-the-look)|
 |RCUBE_PRODUCT_NAME|The product name to display instead of _Roundcube Webmail_|
 |RCUBE_SKIN|The default skin to use instead of the default|
 |RCUBE_DES_KEY|This key is used to encrypt the users IMAP password which is temporarily stored in the session database. For security reasons it's important that your Roundcube installation has its very own encryption key and that you *don't use the default value! *|
